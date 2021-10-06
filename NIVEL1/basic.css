@@ -1,0 +1,113 @@
+body {}
+
+html {
+    padding: 10px;
+}
+
+.bloque1 {
+    border: 5px solid black;
+}
+
+.bloque1>div {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstline>div {
+    border: 10px solid grey;
+    background-color: red;
+    text-align: center;
+}
+
+.firstline>div:nth-child(1) {
+    flex: 20%;
+}
+
+.firstline>div:nth-child(2) {
+    flex: 60%;
+}
+
+.firstline>div:nth-child(3) {
+    flex: 20%;
+}
+
+.secondline>div {
+    border: 10px solid orange;
+    flex: 1;
+    background-color: yellow;
+    text-align: center;
+}
+
+.bloque3>div {
+    margin-top: 10px;
+    border: 10px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    text-align: center;
+    flex: 1;
+    height: 10px;
+}
+
+.bloque2>div {
+    border: 10PX solid black;
+}
+
+.bloque2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.treeline {
+   
+    flex-direction: column;
+    flex: 70%;
+    background-color: gray;
+}
+
+.treeline>div {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 10px;
+    height: 10px;
+}
+
+.bloc1>div {
+    background-color: blue;
+    text-align: center;
+    flex: 35%;
+}
+
+.bloc2>div {
+    background-color: blue;
+    text-align: center;
+    flex: 35%;
+}
+
+.treeline>div:nth-child(3) {
+    background-color: cyan;
+    text-align: center;
+}
+
+.fourline {
+    flex-direction: column;
+    background-color: red;
+    flex: 30%;
+}
+
+.fourline>div {
+    flex-direction: column;
+    background-color: yellow;
+    text-align: center;
+    margin: 10px;
+    height: 10px;
+}
