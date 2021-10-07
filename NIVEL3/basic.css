@@ -1,0 +1,100 @@
+.bloque3>div {
+    margin-top: 10px;
+    border: 10px solid black;
+    background-color: gold;
+    height: 10px;
+}
+
+html {
+    padding: 10px;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bloque1 {
+    border: 10px solid black;
+}
+
+.bloque1>div {
+    display: flex;
+}
+
+.firstline {
+    border-bottom: 5px solid black;
+}
+
+.firstline>div {
+    border: 10px solid grey;
+    background-color: red;
+    height: 10px;
+}
+
+.firstline>div:nth-child(1) {
+    flex: 15%;
+}
+
+.firstline>div:nth-child(2) {
+    flex: 70%;
+}
+
+.firstline>div:nth-child(3) {
+    flex: 15%;
+}
+
+.secondline>div {
+    border: 10px solid orange;
+    flex: 1;
+    background-color: yellow;
+    height: 10px;
+}
+
+.bloque2 {
+    
+    margin-top: 10px;
+    border: 10PX solid yellow;
+}
+.bloque2>div {
+    display: grid;
+}
+
+.treeline {
+    
+    background-color: gray;
+    border-bottom: 10PX solid yellow;
+    
+    
+}
+
+.treeline>div {
+    margin: 10px;
+    height: 10px;
+}
+
+.treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+    background-color: blue;
+    
+}
+
+.Special {
+    background-color: cyan;
+    grid-column: 1/3;
+}
+
+
+.box>div:nth-child(2){
+
+    background-color: gold;
+    height: 10px;
+}
+
+.box>div:nth-child(1){
+    border-bottom:5px solid red;
+    background-color: gold;
+    height: 10px;
+}
+
+.box{
+    border: 10px solid red;
+}
+
