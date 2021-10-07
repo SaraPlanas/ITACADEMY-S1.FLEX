@@ -7,7 +7,6 @@
 
 html {
     padding: 10px;
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -16,30 +15,13 @@ html {
     border: 10px solid black;
 }
 
-.bloque1>div {
-    display: flex;
-}
-
 .firstline {
     border-bottom: 5px solid black;
 }
 
 .firstline>div {
-    border: 10px solid grey;
     background-color: red;
     height: 10px;
-}
-
-.firstline>div:nth-child(1) {
-    flex: 15%;
-}
-
-.firstline>div:nth-child(2) {
-    flex: 70%;
-}
-
-.firstline>div:nth-child(3) {
-    flex: 15%;
 }
 
 .secondline>div {
@@ -50,17 +32,7 @@ html {
 }
 
 .bloque2 {
-    display: flex;
     margin-top: 10px;
-    border: 10PX solid black;
-}
-
-.treeline {
-    flex: 85%;
-    background-color: gray;
-    border-right: 10PX solid black;
-    display: grid;
-    
 }
 
 .treeline>div {
@@ -70,23 +42,133 @@ html {
 
 .treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
     background-color: blue;
-    
 }
 
 .Special {
     background-color: cyan;
-    grid-column: 1/3;
 }
 
-.fourline {
-    background-color: red;
-    flex: 30%;
+@media screen and (min-width:769px) {
+    html {
+        max-width: 1200px;
+    }
+    .bloque1>div {
+        display: flex;
+    }
+    .firstline>div {
+        border: 10px solid grey;
+    }
+    .firstline>div:nth-child(1) {
+        flex: 15%;
+    }
+    .firstline>div:nth-child(2) {
+        flex: 70%;
+    }
+    .firstline>div:nth-child(3) {
+        flex: 15%;
+    }
+    .bloque2 {
+        display: flex;
+        border: 10PX solid black;
+    }
+    .treeline {
+        flex: 85%;
+        background-color: gray;
+        border-right: 10PX solid black;
+        display: grid;
+    }
+    .Special {
+        grid-column: 1/3;
+    }
+    .fourline {
+        background-color: red;
+        flex: 30%;
+    }
+    .box>div {
+        background-color: yellow;
+        margin: 10px;
+        height: 10px;
+    }
 }
 
-.fourline>div {
-    background-color: yellow;
-    margin: 10px;
-    height: 10px;
+/*tablet*/
+
+@media screen and (min-width:415px) and (max-width:768px) {
+    .bloque1>div {
+        display: flex;
+    }
+    .firstline>div {
+        border: 10px solid grey;
+    }
+    .firstline>div:nth-child(1) {
+        flex: 15%;
+    }
+    .firstline>div:nth-child(2) {
+        flex: 70%;
+    }
+    .firstline>div:nth-child(3) {
+        flex: 15%;
+    }
+    .bloque2 {
+        border: 10PX solid yellow;
+    }
+    .bloque2>div {
+        display: grid;
+    }
+    .treeline {
+        background-color: gray;
+        border-bottom: 10PX solid yellow;
+    }
+    .Special {
+        grid-column: 1/3;
+    }
+    .box>div:nth-child(2) {
+        background-color: gold;
+        height: 10px;
+    }
+    .box>div:nth-child(1) {
+        border-bottom: 5px solid red;
+        background-color: gold;
+        height: 10px;
+    }
+    .box {
+        border: 10px solid red;
+    }
 }
 
+/*movil*/
 
+@media screen and (max-width: 414px) {
+    .bloque1 {
+        display: grid;
+    }
+    .firstline {
+        background-color: rgb(18, 18, 139);
+    }
+    .firstline>div {
+        margin: 10px;
+    }
+    .bloque2 {
+        display: grid;
+        border: 10PX solid gold;
+    }
+    .treeline {
+        background-color: blue;
+        border-bottom: 10PX solid gold;
+    }
+    .treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+        background-color: cornflowerblue;
+    }
+    .box>div:nth-child(2) {
+        background-color: gold;
+        height: 10px;
+    }
+    .box>div:nth-child(1) {
+        border-bottom: 5px solid red;
+        background-color: gold;
+        height: 10px;
+    }
+    .box {
+        border: 10px solid red;
+    }
+}
