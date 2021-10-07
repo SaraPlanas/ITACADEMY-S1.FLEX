@@ -7,7 +7,9 @@
 
 html {
     padding: 10px;
-    max-width: 780px;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .bloque1 {
@@ -48,16 +50,19 @@ html {
 }
 
 .bloque2 {
-    display: flex;
+    
     margin-top: 10px;
-    border: 10PX solid black;
+    border: 10PX solid yellow;
+}
+.bloque2>div {
+    display: grid;
 }
 
 .treeline {
-    flex: 85%;
+    
     background-color: gray;
-    border-right: 10PX solid black;
-    display: grid;
+    border-bottom: 10PX solid yellow;
+    
     
 }
 
@@ -76,13 +81,20 @@ html {
     grid-column: 1/3;
 }
 
-.fourline {
-    background-color: red;
-    flex: 30%;
-}
 
-.fourline>div {
-    background-color: yellow;
-    margin: 10px;
+.box>div:nth-child(2){
+
+    background-color: gold;
     height: 10px;
 }
+
+.box>div:nth-child(1){
+    border-bottom:5px solid red;
+    background-color: gold;
+    height: 10px;
+}
+
+.box{
+    border: 10px solid red;
+}
+
