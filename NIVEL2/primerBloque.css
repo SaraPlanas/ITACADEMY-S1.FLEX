@@ -1,0 +1,206 @@
+.bloque3>div {
+    margin-top: 10px;
+    border: 10px solid black;
+    background-color: gold;
+    height: 10px;
+}
+
+html {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.navegacion {
+    flex: 5 1 auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    color: chocolate;
+}
+
+.redes a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: chocolate;
+}
+
+.redes>div {
+    display: inline-flex;
+    flex: 1 1 auto;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.container_barra {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 400px;
+    align-items: center;
+}
+
+.container_inicial {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: url("RECURSOS/header.jpg");
+    background-position: center 42%;
+    display: flex;
+    margin-top: -100px;
+    flex-flow: column nowrap;
+}
+
+.container_texto {
+    height: 105px;
+    padding-top: 30px;
+    background-color: rgb(129, 126, 126);
+    opacity: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container_texto>div {
+    align-self: center;
+    font-family: new times roman;
+    font-size: x-large;
+    color: orange;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+.bloque2 {
+    margin-top: 10px;
+}
+
+.treeline>div {
+    margin: 10px;
+    height: 10px;
+}
+
+.treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+    background-color: blue;
+}
+
+.Special {
+    background-color: cyan;
+}
+
+@media screen and (min-width:769px) {
+    html {
+        max-width: 1200px;
+    }
+    .bloque2 {
+        display: flex;
+        border: 10PX solid black;
+    }
+    .treeline {
+        flex: 85%;
+        background-color: gray;
+        border-right: 10PX solid black;
+        display: grid;
+    }
+    .Special {
+        grid-column: 1/3;
+    }
+    .fourline {
+        background-color: red;
+        flex: 30%;
+    }
+    .box>div {
+        background-color: yellow;
+        margin: 10px;
+        height: 10px;
+    }
+}
+
+/*tablet*/
+
+@media screen and (min-width:415px) and (max-width:768px) {
+    .bloque2 {
+        border: 10PX solid yellow;
+    }
+    .bloque2>div {
+        display: grid;
+    }
+    .treeline {
+        background-color: gray;
+        border-bottom: 10PX solid yellow;
+    }
+    .Special {
+        grid-column: 1/3;
+    }
+    .box>div:nth-child(2) {
+        background-color: gold;
+        height: 10px;
+    }
+    .box>div:nth-child(1) {
+        border-bottom: 5px solid red;
+        background-color: gold;
+        height: 10px;
+    }
+    .box {
+        border: 10px solid red;
+    }
+}
+
+/*movil*/
+
+@media screen and (max-width: 414px) {
+    .container_barra {
+        align-self: center;
+        display: grid;
+        align-content: center;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .navegacion {
+        display: grid;
+    }
+    .redes>div {
+        display: grid;
+    }
+    .bloque2 {
+        display: grid;
+        border: 10PX solid gold;
+    }
+    .treeline {
+        background-color: blue;
+        border-bottom: 10PX solid gold;
+    }
+    .treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+        background-color: cornflowerblue;
+    }
+    .box>div:nth-child(2) {
+        background-color: gold;
+        height: 10px;
+    }
+    .box>div:nth-child(1) {
+        border-bottom: 5px solid red;
+        background-color: gold;
+        height: 10px;
+    }
+    .box {
+        border: 10px solid red;
+    }
+}
