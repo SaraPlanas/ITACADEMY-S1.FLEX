@@ -40,13 +40,16 @@ html {
 .redes a:hover {
     color: chocolate;
 }
+
 p a:hover {
     color: chocolate;
 }
-p a{
-    color: black;
+
+p a {
+    color: rgba(99, 98, 98, 0.562);
     text-decoration: none;
 }
+
 .redes>div {
     display: inline-flex;
     flex: 1 1 auto;
@@ -87,16 +90,15 @@ p a{
 .container_texto>div {
     align-self: center;
     font-family: new times roman;
-    font-size: x-large;
     color: orange;
     justify-content: center;
     flex: 1;
     text-align: center;
+    font-size: x-large;
 }
 
 .seccionArticulos {
     margin-top: 10px;
-    
     display: flex;
 }
 
@@ -105,26 +107,32 @@ p a{
     background: gray;
     flex: 2 1 auto;
     flex-flow: row wrap;
-    padding:2px;
+    padding: 2px;
 }
 
-.article{
-    background: rgba(236, 155, 155, 0.952);
-    color: black;
-    font-size: 10px;
+.article {
+    background: rgb(216, 187, 187);
+    color: rgb(71, 70, 70);
     flex: 1 1 40%;
     padding: 5px;
     overflow: hidden;
     border: 5px solid gray;
-    margin-left:10px;
-    
-    
-    }
+}
 
-h2{
-    
+.Special {
+    color: black;
+    font-size: small;
+    flex: 1 1 auto;
+    padding: 10px;
+    margin-top: -10px;
+    margin: 10px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: x-large;
     color: white;
-    font-size: 12px;
     padding: 10px 0;
     margin-top: -15px;
     initial-letter: 2px;
@@ -132,68 +140,99 @@ h2{
     letter-spacing: 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h4{
+
+h4 {
+    font-size: medium;
     margin-left: 5px;
     color: gold;
-    font-size: 8px;
-    margin-top: -15px;
+    margin-top: -25px;
     font-family: Arial, Helvetica, sans-serif;
-    
-  
 }
-p{
-    margin-left: 5px;
+
+p {
+    font-size: small;
+    margin: 5px 5px;
     column-count: 2;
     text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    
+    font-size: medium;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.anuncio p {
+    font-size: small;
+    margin-right: 10px;
+    padding-top: 10px;
+    column-count: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.anuncio {
+    background: gray;
+    
+    display: grid;
+    align-content: baseline;
 
 }
-article img{
+.anuncio article{
+    text-align: center;
+    color: rgb(43, 39, 39);
+   
+}
+.firma>div {
+    font-size: small;
+    color: gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firma {
+    border-left: 10px solid gray;
+    border-right: 10px solid gray;
+    background: rgb(216, 187, 187);
+    margin-top: 10px;
+}
+
+article img {
     width: 100%;
 }
 
-.Special {
-    background-color: cyan;
-}
-
+/*desktop*/
 @media screen and (min-width:769px) {
     html {
         max-width: 1200px;
     }
-    
+    .anuncio{
+        margin-left: 10px;
+    }
+    .anuncio article{
    
-    .Special {
-        grid-column: 1/3;
+        padding-top: 20px;
+        margin: 10px 10px;
     }
-    .fourline {
-        background-color: red;
-        flex: 30%;
-    }
-    .box>div {
-        background-color: yellow;
-        margin: 10px;
-        height: 10px;
-    }
+    
 }
 
 /*tablet*/
 
 @media screen and (min-width:415px) and (max-width:768px) {
-   
     .Special {
         grid-column: 1/3;
     }
-    .box>div:nth-child(2) {
-        background-color: gold;
-        height: 10px;
-    }
-    .box>div:nth-child(1) {
-        border-bottom: 5px solid red;
-        background-color: gold;
-        height: 10px;
-    }
-    .box {
-        border: 10px solid red;
-    }
+   .seccionArticulos{
+       flex-flow: column;
+       
+   }
+   .anuncio{
+       margin-top: 10px;
+   }
+ 
 }
 
 /*movil*/
@@ -213,17 +252,14 @@ article img{
     .redes>div {
         display: grid;
     }
-  
-    .box>div:nth-child(2) {
-        background-color: gold;
-        height: 10px;
-    }
-    .box>div:nth-child(1) {
-        border-bottom: 5px solid red;
-        background-color: gold;
-        height: 10px;
-    }
-    .box {
-        border: 10px solid red;
-    }
+  .articulos{
+      display: grid;
+  }
+  .seccionArticulos{
+      flex-flow: column;
+      
+  }
+  .anuncio{
+    margin-top: 10px;
+  }
 }
