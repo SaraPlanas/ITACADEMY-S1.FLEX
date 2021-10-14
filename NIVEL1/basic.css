@@ -1,4 +1,15 @@
-.bloque3>div {
+
+Meet
+Nueva reunión
+Unirse a una reunión
+Hangouts
+
+Conversaciones
+83,13 GB ocupados de 100 GB (83 %)
+Términos · Privacidad · Política del programa
+Última actividad de la cuenta: hace 2 horas
+Detalles
+.firma>div {
     margin-top: 10px;
     border: 10px solid black;
     background-color: gold;
@@ -11,36 +22,39 @@ html {
     margin-right: auto;
 }
 
-.bloque1 {
+.container_inicial {
     border: 10px solid black;
 }
 
-.firstline {
+.container_barra {
     border-bottom: 5px solid black;
+    display: flex;
+
 }
 
-.firstline>div {
+.container_barra>div {
     background-color: red;
     height: 10px;
+    
 }
 
-.secondline>div {
+.container_texto>div {
     border: 10px solid orange;
     flex: 1;
     background-color: yellow;
     height: 10px;
 }
 
-.bloque2 {
+.seccionArticulos {
     margin-top: 10px;
 }
 
-.treeline>div {
+.articulos>div {
     margin: 10px;
     height: 10px;
 }
 
-.treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+.articulos>div:nth-child(1), .articulos>div:nth-child(2), .articulos>div:nth-child(3), .articulos>div:nth-child(4) {
     background-color: blue;
 }
 
@@ -52,26 +66,26 @@ html {
     html {
         max-width: 1200px;
     }
-    .bloque1>div {
+    .container_inicial>div {
         display: flex;
     }
-    .firstline>div {
+    .container_barra>div {
         border: 10px solid grey;
     }
-    .firstline>div:nth-child(1) {
+    .container_barra>div:nth-child(1) {
         flex: 15%;
     }
-    .firstline>div:nth-child(2) {
+    .container_barra>div:nth-child(2) {
         flex: 70%;
     }
-    .firstline>div:nth-child(3) {
+    .container_barra>div:nth-child(3) {
         flex: 15%;
     }
-    .bloque2 {
+    .seccionArticulos {
         display: flex;
         border: 10PX solid black;
     }
-    .treeline {
+    .articulos {
         flex: 85%;
         background-color: gray;
         border-right: 10PX solid black;
@@ -80,13 +94,14 @@ html {
     .Special {
         grid-column: 1/3;
     }
-    .fourline {
+    .anuncio {
         background-color: red;
         flex: 30%;
+
     }
-    .box>div {
-        background-color: yellow;
-        margin: 10px;
+    .anuncioTexto>div {
+     border: 10px solid red;
+        background-color: gold;
         height: 10px;
     }
 }
@@ -94,44 +109,44 @@ html {
 /*tablet*/
 
 @media screen and (min-width:415px) and (max-width:768px) {
-    .bloque1>div {
+    .container_inicial>div {
         display: flex;
     }
-    .firstline>div {
+    .container_barra>div {
         border: 10px solid grey;
     }
-    .firstline>div:nth-child(1) {
+    .container_barra>div:nth-child(1) {
         flex: 15%;
     }
-    .firstline>div:nth-child(2) {
+    .container_barra>div:nth-child(2) {
         flex: 70%;
     }
-    .firstline>div:nth-child(3) {
+    .container_barra>div:nth-child(3) {
         flex: 15%;
     }
-    .bloque2 {
+    .seccionArticulos {
         border: 10PX solid yellow;
     }
-    .bloque2>div {
+    .seccionArticulos>div {
         display: grid;
     }
-    .treeline {
+    .articulos {
         background-color: gray;
         border-bottom: 10PX solid yellow;
     }
     .Special {
         grid-column: 1/3;
     }
-    .box>div:nth-child(2) {
+    .anuncioTexto>div:nth-child(2) {
         background-color: gold;
         height: 10px;
     }
-    .box>div:nth-child(1) {
+    .anuncioTexto>div:nth-child(1) {
         border-bottom: 5px solid red;
         background-color: gold;
         height: 10px;
     }
-    .box {
+    .anuncio {
         border: 10px solid red;
     }
 }
@@ -139,36 +154,37 @@ html {
 /*movil*/
 
 @media screen and (max-width: 414px) {
-    .bloque1 {
+    .container_inicial {
         display: grid;
     }
-    .firstline {
+    .container_barra {
+    display:grid;
         background-color: rgb(18, 18, 139);
     }
-    .firstline>div {
+    .container_barra>div {
         margin: 10px;
     }
-    .bloque2 {
+    .seccionArticulos {
         display: grid;
         border: 10PX solid gold;
     }
-    .treeline {
+    .articulos {
         background-color: blue;
         border-bottom: 10PX solid gold;
     }
-    .treeline>div:nth-child(1), .treeline>div:nth-child(2), .treeline>div:nth-child(3), .treeline>div:nth-child(4) {
+    .articulos>div:nth-child(1), .articulos>div:nth-child(2), .articulos>div:nth-child(3), .articulos>div:nth-child(4) {
         background-color: cornflowerblue;
     }
-    .box>div:nth-child(2) {
+    .anuncioTexto>div:nth-child(2) {
         background-color: gold;
         height: 10px;
     }
-    .box>div:nth-child(1) {
+    .anuncioTexto>div:nth-child(1) {
         border-bottom: 5px solid red;
         background-color: gold;
         height: 10px;
     }
-    .box {
+    .anuncio {
         border: 10px solid red;
     }
 }
