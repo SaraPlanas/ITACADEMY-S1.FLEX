@@ -1,0 +1,260 @@
+
+
+html {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.navegacion {
+    flex: 5 1 auto;
+    display: inline-flex;
+    justify-content: space-evenly;
+    color: black;
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+}
+
+.navegacion a:hover {
+    color: chocolate;
+}
+
+.redes a {
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: chocolate;
+}
+
+p a:hover {
+    color: chocolate;
+}
+
+p a {
+    color: rgba(99, 98, 98, 0.562);
+    text-decoration: none;
+}
+
+.redes>div {
+    display: inline-flex;
+    flex: 1 1 auto;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.container_barra {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 400px;
+    align-items: center;
+}
+
+.container_inicial {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: url("RECURSOS/header.jpg");
+    background-position: center 42%;
+    display: flex;
+    margin-top: -100px;
+    flex-flow: column nowrap;
+}
+
+.container_texto {
+    height: 105px;
+    padding-top: 30px;
+    background-color: rgb(129, 126, 126);
+    opacity: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container_texto>div {
+    align-self: center;
+    font-family: new times roman;
+    color: orange;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    font-size: x-large;
+}
+
+.seccionArticulos {
+    margin-top: 10px;
+    display: flex;
+}
+
+.articulos {
+    display: flex;
+    background: gray;
+    flex: 2 1 auto;
+    flex-flow: row wrap;
+    padding: 2px;
+}
+
+.article {
+    background: rgb(216, 187, 187);
+    color: rgb(71, 70, 70);
+    flex: 1 1 40%;
+    padding: 5px;
+    overflow: hidden;
+    border: 5px solid gray;
+}
+
+.Special {
+    color: black;
+    font-size: small;
+    flex: 1 1 auto;
+    padding: 10px;
+    margin-top: -10px;
+    margin: 10px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: x-large;
+    color: white;
+    padding: 10px 0;
+    margin-top: -15px;
+    initial-letter: 2px;
+    background: salmon;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    font-size: medium;
+    margin-left: 5px;
+    color: gold;
+    margin-top: -25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: small;
+    margin: 5px 5px;
+    column-count: 2;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    
+    font-size: medium;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.anuncio p {
+    font-size: small;
+    margin-right: 10px;
+    padding-top: 10px;
+    column-count: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.anuncio {
+    background: gray;
+    
+    display: grid;
+    align-content: baseline;
+
+}
+.anuncio article{
+    text-align: center;
+    color: rgb(43, 39, 39);
+   
+}
+.firma>div {
+    font-size: small;
+    color: gray;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firma {
+    border-left: 10px solid gray;
+    border-right: 10px solid gray;
+    background: rgb(216, 187, 187);
+    margin-top: 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+/*desktop*/
+@media screen and (min-width:769px) {
+    html {
+        max-width: 1200px;
+    }
+    .anuncio{
+        margin-left: 10px;
+    }
+    .anuncio article{
+   
+        padding-top: 20px;
+        margin: 10px 10px;
+    }
+    
+}
+
+/*tablet*/
+
+@media screen and (min-width:415px) and (max-width:768px) {
+    .Special {
+        grid-column: 1/3;
+    }
+   .seccionArticulos{
+       flex-flow: column;
+       
+   }
+   .anuncio{
+       margin-top: 10px;
+   }
+ 
+}
+
+/*movil*/
+
+@media screen and (max-width: 414px) {
+    .container_barra {
+        align-self: center;
+        display: grid;
+        align-content: center;
+    }
+    .logo {
+        justify-content: center;
+    }
+    .navegacion {
+        display: grid;
+    }
+    .redes>div {
+        display: grid;
+    }
+  .articulos{
+      display: grid;
+  }
+  .seccionArticulos{
+      flex-flow: column;
+      
+  }
+  .anuncio{
+    margin-top: 10px;
+  }
+}
